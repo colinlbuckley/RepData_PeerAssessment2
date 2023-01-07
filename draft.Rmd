@@ -1,0 +1,19 @@
+---
+title: "Report_Draft"
+author: "Colin Buckley"
+date: '2023-01-06'
+output: html_document
+---
+
+```{r load_dependencies, message = FALSE}
+library(tidyverse)
+```
+
+## Data Processing
+```{r read_data, cache = TRUE}
+storms <- read.csv("data/StormData.csv") %>% tibble
+
+storms
+```
+
+## Results
